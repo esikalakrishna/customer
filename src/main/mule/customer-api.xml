@@ -134,8 +134,8 @@ output application/json
 ---
 {
   customerID: "73657467",
-  customerName: "Ramakrishna mule course",
-  customerProvider: "Udemy",
+  customerName: "Ramakrishna Esikala mule course",
+  customerProvider: " Cognizant Udemy",
   customerDescription: "Sample customer",
   customerShippingAddress: "Nizampet,Hyderabad"
 }]]></ee:set-payload>
