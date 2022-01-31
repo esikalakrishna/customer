@@ -136,8 +136,8 @@ output application/json
   customerID: "73657467",
   customerName: "Ramakrishna Esikala mule course",
   customerProvider: " Cognizant Udemy",
-  customerDescription: "Sample customer",
-  customerShippingAddress: "Nizampet,Hyderabad"
+  customerDescription: "Sample customer retrieval data",
+  customerShippingAddress: " Kukatpally,Nizampet,Hyderabad pin-50090"
 }]]></ee:set-payload>
             </ee:message>
         </ee:transform>
