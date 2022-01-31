@@ -1,0 +1,18 @@
+#%RAML 1.0
+title: customer-api
+
+/customer:
+  get:
+    description: To retrieve customer details
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "customerID": "73657467",
+                "customerName": "Ramakrishna mule course",
+                "customerProvider": "Udemy",
+                "customerDescription": "Sample customer",
+                "customerShippingAddress": "Nizampet,Hyderabad"
+              }
