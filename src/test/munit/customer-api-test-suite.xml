@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="customer-api-test-suite.xml" />
+	<munit:test name="customer-api-test-suite-get:\customer:customer-api-configTest" doc:id="8ab9b23f-40e2-4e51-a948-9d0b1012be71" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\customer:customer-api-config" doc:id="2d7b3b2c-5761-4df5-84ee-ec1a67679114" name="get:\customer:customer-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<logger level="INFO" doc:name="info log" doc:id="cc71f14f-a198-4cc9-92b9-e3c7976346b9" message="#[payload]"/>
+			<munit-tools:assert doc:name="Assert paylod not Null" doc:id="f8e5db41-15ae-4abd-a56d-6f863edb4359" />
+		</munit:validation>
+	</munit:test>
+
+
+</mule>

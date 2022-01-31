@@ -133,11 +133,11 @@ output application/json
 output application/json
 ---
 {
-  customerID: "12345",
+  customerID: "73657467",
   customerName: "Ramakrishna Esikala mule course",
   customerProvider: " Cognizant Udemy",
-  customerDescription: "Sample customer retrieval data",
-  customerShippingAddress: " Kukatpally,Nizampet,Hyderabad pin-50090 INDIA"
+  customerDescription: "Sample customer",
+  customerShippingAddress: "Nizampet,Hyderabad"
 }]]></ee:set-payload>
             </ee:message>
         </ee:transform>
