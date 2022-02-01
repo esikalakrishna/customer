@@ -32,8 +32,8 @@
 							<cloudHubDeployment>
 								<uri>https://anypoint.mulesoft.com</uri>
 								<muleVersion>4.3.0</muleVersion>
-								<username>saiesikala</username>
-								<password>Krishna@1974</password>
+								<username>${anypoint.username}</username>
+								<password>${anypoint.password}</password>
 								<objectStoreV2>true</objectStoreV2>
 								<applicationName>cts-dev-customer-api</applicationName>
 								<environment>dev</environment>
@@ -44,8 +44,8 @@
 									<http.port>8081</http.port>
 									<env>dev</env>
 									<api.id>17602143</api.id>
-									<anypoint.platform.client_id>0686a9b1f4e446a6a85c2bfc009229a7</anypoint.platform.client_id>
-									<anypoint.platform.client_secret>c4b3e448748f4aFAA86f61f6cd0221F5</anypoint.platform.client_secret>
+									<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
+									<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
 									<anypoint.platform.base_uri>https://anypoint.mulesoft.com</anypoint.platform.base_uri>
 									<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
 								</properties>
